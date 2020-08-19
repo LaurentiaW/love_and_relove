@@ -1,0 +1,130 @@
+@import "variables.scss";
+
+body {
+  min-height: 100vh;
+  background-color: $bg-clr;
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 1.4;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: $text-clr;
+}
+
+h1,
+h2,
+h3,
+.display {
+  font-family: $display-font;
+  /* color: $comp-clr; */
+  font-size: 21px;
+  @media screen and (min-width: 993px) {
+    font-size: 30px;
+  }
+}
+
+h1,
+.display {
+  font-size: 40px;
+  @media screen and (min-width: 993px) {
+    font-size: 50px;
+  }
+}
+h2 {
+  font-size: 16px;
+  @media screen and (min-width: 993px) {
+    font-size: 24px;
+  }
+}
+
+h4,
+h5,
+h6 {
+  /* color: $comp-clr; */
+  font-weight: lighter;
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  @media screen and (min-width: 993px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 20px 0;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.display-font {
+  font-family: $display-font;
+}
+
+.body-font {
+  font-family: $body-font;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a,
+a:active,
+a:visited {
+  color: $comp-clr;
+  text-decoration: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+figure > * {
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+  li {
+    list-style: none;
+    margin: 5px 0;
+  }
+}
+
+hr {
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px 10px;
+}

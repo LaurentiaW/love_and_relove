@@ -1,0 +1,21 @@
+@import "../base/variables.scss";
+button,
+.btn {
+  border: 1px solid $main-clr;
+  border-radius: 4px;
+  background: $main-clr;
+  padding: 10px 14px;
+  cursor: pointer;
+  color: $comp-clr;
+  font-weight: 700;
+  transition: 0.3s all ease;
+  -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background: $comp-clr;
+    border: 1px solid $comp-clr;
+    color: $main-clr;
+  }
+}

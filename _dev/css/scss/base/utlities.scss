@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+/*------------  Utilities   -----------*/
+
+.two-col .card:first-child,
+.two-col-lrg .card:first-child {
+  margin-top: 0;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.display-font {
+  font-family: $display-font;
+}
+
+.body-font {
+  font-family: $body-font;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.emphasize {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+@mixin bg-color($bg, $opacity, $color) {
+  background-color: rgba($bg, $opacity);
+  color: $color;
+}
+
+.bg-green {
+  @include bg-color(var(--dark-green), 0, $white);
+
+  &.opacity-50 {
+    @include bg-color(var(--dark-green), 0.5, $white);
+  }
+}
+
+.m-t-8 {
+  margin-top: (4 * 8px);
+}
+
+.hidden {
+  display: none;
+}
