@@ -2,12 +2,15 @@
  * Custom code goes here. love and relove
  * A template should always ship with an empty custom.css
  */
+/*bootstrap*/
+@import "base/bootstrap.scss";
 
 /*base*/
 @import "base/global.scss";
 
 @import "base/layout.scss";
 @import "base/utlities.scss";
+
 /*components*/
 
 @import "components/button.scss";

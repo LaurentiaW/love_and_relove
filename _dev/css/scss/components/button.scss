@@ -18,4 +18,15 @@ button,
     border: 1px solid $comp-clr;
     color: $main-clr;
   }
+
+  &.btn-unstyle {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      background: transparentr;
+      border: none;
+      color: $main-clr;
+    }
+  }
 }

@@ -56,3 +56,24 @@ header {
     box-shadow: none;
   }
 }
+
+.dropdown {
+  .expand-more {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown select {
+  -moz-appearance: none;
+  border: 0 none;
+  outline: 0 none;
+  background: #fff;
+}
