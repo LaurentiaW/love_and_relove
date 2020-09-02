@@ -29,4 +29,8 @@ button,
       color: $main-clr;
     }
   }
+
+  &.no-box-shadow {
+    box-shadow: none;
+  }
 }
