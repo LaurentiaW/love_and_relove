@@ -3,9 +3,16 @@
 .hero {
   &.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-areas:
+      "text text"
+      "img1 img2"
+      "img3 img4";
     grid-gap: 1rem;
+
+    @media screen and (min-width: 993px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px 200px;
+    }
 
     img {
       object-fit: cover;
@@ -14,22 +21,35 @@
     }
 
     .grid-1 {
-      grid-column: 1 / span 1;
-      grid-row: 1 / 2;
+      grid-area: img1;
+      @media screen and (min-width: 993px) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / 2;
+      }
     }
 
     .grid-2 {
-      grid-column: 1 / span 1;
-      grid-row: 2 / 3;
+      grid-area: img2;
+      @media screen and (min-width: 993px) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / 3;
+      }
     }
     .grid-3 {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 2;
+      grid-area: img3;
+      @media screen and (min-width: 993px) {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+      }
     }
 
     .grid-5 {
-      grid-column: 3 / span 1;
-      grid-row: 1 / 2;
+      grid-area: text;
+
+      @media screen and (min-width: 993px) {
+        grid-column: 3 / span 1;
+        grid-row: 1 / 2;
+      }
       background-color: var(--main-clr);
 
       padding: 0 0.5rem;
@@ -40,9 +60,14 @@
       }
     }
     .grid-4 {
-      grid-column: 3 / span 1;
-      grid-row: 2 / 3;
+      grid-area: img4;
+
+      @media screen and (min-width: 993px) {
+        grid-column: 3 / span 1;
+        grid-row: 2 / 3;
+      }
     }
+    // }
   }
 }
 

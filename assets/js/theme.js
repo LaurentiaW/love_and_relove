@@ -4506,22 +4506,22 @@
                 T.prefix +
                 '</span><span class="input-group-addon bootstrap-touchspin-postfix">' +
                 T.postfix +
-                '</span><span class="input-group-btn-vertical"><button class="' +
+                '</span><button class="' +
                 T.buttondown_class +
                 ' bootstrap-touchspin-up" type="button"><i class="' +
                 T.verticalupclass +
-                '"></i></button><button class="' +
+                '"></i><span>+</span></button><button class="' +
                 T.buttonup_class +
                 ' bootstrap-touchspin-down" type="button"><i class="' +
                 T.verticaldownclass +
-                '"></i></button></span></div>'
+                '"></i><span>-</span></button></span></div>'
               : '<div class="input-group bootstrap-touchspin"><span class="input-group-btn"><button class="' +
                 T.buttondown_class +
                 ' bootstrap-touchspin-down" type="button">' +
                 T.buttondown_txt +
                 '</button></span><span class="input-group-addon bootstrap-touchspin-prefix">' +
                 T.prefix +
-                '</span><span class="input-group-addon bootstrap-touchspin-postfix">' +
+                '<span class="input-group-addon bootstrap-touchspin-postfix">' +
                 T.postfix +
                 '</span><span class="input-group-btn"><button class="' +
                 T.buttonup_class +

@@ -53,7 +53,7 @@
     <meta itemprop="url" content="{$product.url}">
 
     <div class="row product-container">
-      <div class="col-md-6">
+      <div class="col-md-8">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -78,7 +78,7 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           {block name='page_header_container'}
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
@@ -142,9 +142,7 @@
 
             </div>
 
-            {block name='hook_display_reassurance'}
-              {hook h='displayReassurance'}
-            {/block}
+           
 
             {block name='product_tabs'}
               <div class="tabs">
@@ -229,6 +227,11 @@
               </div>  
             </div>
           {/block}
+
+            {block name='hook_display_reassurance'}
+              {hook h='displayReassurance'}
+            {/block}
+
         </div>
       </div>
     </div>

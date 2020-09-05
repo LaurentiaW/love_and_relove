@@ -28,12 +28,20 @@
       {if $cart.products_count > 0}
         <a rel="nofollow" href="{$cart_url}">
       {/if}
-        <i class="material-icons shopping-cart">shopping_cart</i>
-        <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
-        <span class="cart-products-count">({$cart.products_count})</span>
+    <svg class="icon shopping-bag" viewBox="0 0 17.5 21.875"> 
+          <use xlink:href="#shopping_bag" x="0" y="0" />
+        </svg>
+        {* <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span> *}
+        <span class="cart-products-count">{$cart.products_count}</span>
       {if $cart.products_count > 0}
         </a>
       {/if}
     </div>
   </div>
 </div>
+
+<svg style="display: none;"> 
+  <symbol id="shopping_bag">
+   <path id="Path_8" data-name="Path 8" d="M17.844,4H15.656a2.194,2.194,0,0,0-2.187,2.188V8.375H8v17.5H25.5V8.375H20.031V6.188A2.194,2.194,0,0,0,17.844,4Zm5.469,6.563V23.688H10.188V10.563ZM15.656,8.375V6.188h2.188V8.375Z" transform="translate(-8 -4)"/>
+  </symbol>
+</svg>

@@ -30,23 +30,16 @@
         <div class="grid-{$i}">
           {if $smarty.foreach.homeslider.last}
             {if $slide.description}
-                  <figcaption class="caption">
-                    <div class="caption-description">{$slide.description nofilter}</div>
-                  </figcaption>
+                  <div class="caption-description">{$slide.description nofilter}</div>
                 {/if}
-          
             {else}
               <a href="{$slide.url}">
                 <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
               </a>
             {/if}
           </div> 
-          
           {$i++}
-
-        
       {/foreach}
-    
   </div>
   </div>
 {/if}

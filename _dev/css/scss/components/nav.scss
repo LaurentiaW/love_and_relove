@@ -1,11 +1,12 @@
 @import "../base/variables.scss";
 
-header {
+#header {
   .header-top {
+    padding-bottom: 0;
   }
-  @media (min-width: 1020px) {
-    height: 85px;
-  }
+  // @media (min-width: 1020px) {
+  //   height: 85px;
+  // }
 
   &.main-header {
     display: flex;
@@ -35,19 +36,79 @@ header {
   nav {
     &.header-nav {
       width: 100%;
-      // ul {
-      //   display: flex;
-      //   justify-content: space-between;
-      // }
+      margin-bottom: 0;
+
+      #search_widget {
+        button {
+          box-shadow: none;
+        }
+      }
+
+      .mobile {
+        justify-content: space-between;
+        position: relative;
+        #menu-icon {
+          padding-left: 15px;
+        }
+
+        #_mobile_cart {
+          position: absolute;
+          right: 1rem;
+          svg {
+            height: 23px;
+            width: 17px;
+          }
+        }
+
+        #_mobile_logo {
+          padding-top: 0;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          h1 {
+            margin-bottom: 0;
+          }
+
+          svg.icon {
+            height: 60px;
+            // fill: $main-clr;
+          }
+        }
+      }
+
+      /* desktop */
+      .right-nav {
+        align-items: center;
+
+        > * {
+          margin-right: 1rem;
+          padding-right: 1rem;
+        }
+      }
     }
   }
 
+  .header-top {
+    &.logo {
+      background: $main-clr;
+
+      .container .row {
+        justify-content: center;
+        padding: $gutter 0 0;
+      }
+
+      #_desktop_logo {
+        svg {
+          fill: $white;
+          height: 100px;
+        }
+      }
+    }
+  }
   .d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding-top: 24px;
   }
 }
 
